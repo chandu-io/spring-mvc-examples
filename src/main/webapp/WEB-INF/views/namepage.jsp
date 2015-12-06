@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Name page</title>
+<title>Name example</title>
 </head>
 <body>
 	<c:choose>
@@ -19,6 +19,8 @@
 		<br><br>
 		<input type="submit" value="Send name">
 	</form>
+	<br>
+	<a href="home">&lt;&lt;&nbsp;Back</a>
 	</c:otherwise>
 	</c:choose>
 </body>

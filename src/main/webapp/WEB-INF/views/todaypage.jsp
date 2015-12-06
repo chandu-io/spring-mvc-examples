@@ -4,13 +4,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Home</title>
+<title>Today</title>
 </head>
 <body>
-	<h2>Welcome to ${ appName }!</h2>
-	<ul>
-		<li><a href="today">/today</a></li>
-		<li><a href="name">/name</a></li>
-	</ul>
+	<h2>${ greeting }</h2>
+	<p>Today is ${ today }</p>
+	<a href="home">&lt;&lt;&nbsp;Back</a>
 </body>
 </html>

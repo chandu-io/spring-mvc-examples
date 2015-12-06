@@ -14,18 +14,17 @@ public class Home {
 	public ModelAndView get() {
 		final ModelAndView mv = new ModelAndView("homepage");
 		final ModelMap model = new ModelMap();
-		model.put("msg", "Hello World!");
-		model.put("dt", "Today is " + new Date());
+		model.put("appName", "spring-mvc-examples");
 		mv.addAllObjects(model);
 		return mv;
 	}
 
-	@RequestMapping("info")
+	@RequestMapping("today")
 	public ModelAndView get2() {
-		final ModelAndView mv = new ModelAndView("homepage");
+		final ModelAndView mv = new ModelAndView("todaypage");
 		final ModelMap model = new ModelMap();
-		model.put("msg", "Hi there!");
-		model.put("dt", "Today is " + new Date());
+		model.put("greeting", "Hi there!");
+		model.put("today", new Date());
 		mv.addAllObjects(model);
 		return mv;
 	}
