@@ -7,10 +7,11 @@
 <title>Home</title>
 </head>
 <body>
-	<h2>Welcome to ${ appName }!</h2>
+	<h2>Welcome to ${appName}!</h2>
 	<ul>
 		<li><a href="today">/today</a></li>
 		<li><a href="name">/name</a></li>
+		<li><a href="todo-list">/todo-list</a></li>
 	</ul>
 </body>
 </html>

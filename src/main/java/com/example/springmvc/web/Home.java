@@ -1,4 +1,4 @@
-package com.example.springmvc;
+package com.example.springmvc.web;
 
 import java.util.Date;
 
@@ -23,7 +23,7 @@ public class Home {
 	public ModelAndView get2() {
 		final ModelAndView mv = new ModelAndView("todaypage");
 		final ModelMap model = new ModelMap();
-		model.put("greeting", "Hi there!");
+		model.put("greetings", "Hi there!");
 		model.put("today", new Date());
 		mv.addAllObjects(model);
 		return mv;

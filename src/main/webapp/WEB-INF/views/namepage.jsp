@@ -9,8 +9,8 @@
 </head>
 <body>
 	<c:choose>
-	<c:when test="${ not empty name }">
-	<p>You entered: ${ name }</p>
+	<c:when test="${not empty name}">
+	<p>You entered: ${name}</p>
 	<a href="name">&lt;&lt;&nbsp;Back</a>
 	</c:when>
 	<c:otherwise>

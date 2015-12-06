@@ -7,8 +7,8 @@
 <title>Today</title>
 </head>
 <body>
-	<h2>${ greeting }</h2>
-	<p>Today is ${ today }</p>
+	<h2>${greetings}</h2>
+	<p>Today is ${today}</p>
 	<a href="home">&lt;&lt;&nbsp;Back</a>
 </body>
 </html>

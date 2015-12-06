@@ -61,6 +61,20 @@
 			<artifactId>spring-web</artifactId>
 			<version>${spring-version}</version>
 		</dependency>
+		
+		<!-- The spring-jdbc module provides basic JDBC functionality -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>${spring-version}</version>
+		</dependency>
+		
+		<!-- Postgres SQL driver -->
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>${postgresql-version}</version>
+		</dependency>
 
 	</dependencies>
 
@@ -75,6 +89,7 @@
 		<javaee-api-version>7.0</javaee-api-version>
 		<apache-taglibs-version>1.2.5</apache-taglibs-version>
 		<spring-version>4.2.3.RELEASE</spring-version>
+		<postgresql-version>9.4-1206-jdbc42</postgresql-version>
 	</properties>
 
 </project>
