@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.example</groupId>
 	<artifactId>spring-mvc-examples</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.2</version>
 	<packaging>war</packaging>
 	<name>spring-mvc-examples</name>
 
@@ -17,11 +17,16 @@
 			<scope>provided</scope>
 		</dependency>
 
-		<!-- JSTL dependency -->
+		<!-- Apache taglibs dependency -->
 		<dependency>
-			<groupId>javax.servlet.jsp.jstl</groupId>
-			<artifactId>javax.servlet.jsp.jstl-api</artifactId>
-			<version>${jstl-api-version}</version>
+			<groupId>org.apache.taglibs</groupId>
+			<artifactId>taglibs-standard-impl</artifactId>
+			<version>${apache-taglibs-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.taglibs</groupId>
+			<artifactId>taglibs-standard-jstlel</artifactId>
+			<version>${apache-taglibs-version}</version>
 		</dependency>
 
 		<!-- spring-context which provides core functionality -->
@@ -61,20 +66,6 @@
 
 	<build>
 		<finalName>${artifactId}-${version}</finalName>
-		<!-- <plugins>
-
-			to change web project context root
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-eclipse-plugin</artifactId>
-				<version>${maven-eclipse-plugin-version}</version>
-				<configuration>
-					<wtpversion>2.0</wtpversion>
-					<wtpContextName>demo</wtpContextName>
-				</configuration>
-			</plugin>
-
-		</plugins> -->
 	</build>
 
 	<properties>
@@ -82,9 +73,8 @@
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<javaee-api-version>7.0</javaee-api-version>
-		<jstl-api-version>1.2.1</jstl-api-version>
+		<apache-taglibs-version>1.2.5</apache-taglibs-version>
 		<spring-version>4.2.3.RELEASE</spring-version>
-		<maven-eclipse-plugin-version>2.10</maven-eclipse-plugin-version>
 	</properties>
 
 </project>
