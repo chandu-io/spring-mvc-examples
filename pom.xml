@@ -75,6 +75,12 @@
 			<artifactId>postgresql</artifactId>
 			<version>${postgresql-version}</version>
 		</dependency>
+    
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>${jackson-databind-version}</version>
+    </dependency>
 
 	</dependencies>
 
@@ -90,6 +96,7 @@
 		<apache-taglibs-version>1.2.5</apache-taglibs-version>
 		<spring-version>4.2.3.RELEASE</spring-version>
 		<postgresql-version>9.4-1206-jdbc42</postgresql-version>
+		<jackson-databind-version>2.7.1-1</jackson-databind-version>
 	</properties>
 
 </project>
